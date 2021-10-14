@@ -6,6 +6,7 @@
 
     <a-scene background="color: #ECECEC">
       <a-assets>
+        <!--Pictures of Wally to be used !-->
         <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
         <img id="wally1" src="https://i.imgur.com/5ix0Ni4.jpeg">
         <img id="wally2" src="https://i.imgur.com/EBvDKYq.jpeg">
@@ -20,87 +21,87 @@
         <img id="wally11" src="https://i.imgur.com/Mx83ogT.jpeg">
         <img id="wally12" src="https://i.imgur.com/g4jLE7z.jpeg">
         <img id="wally13" src="https://i.imgur.com/NlifRRz.jpeg">
+        <img id="wally14" src="https://i.imgur.com/RVNwEpA.jpg">
+        <img id="wally15" src="https://i.imgur.com/WpqpgNV.jpg">
       </a-assets>
 
-
+      <!-- Camera Positioning and Clock hand !-->
+      <a-entity camera look-controls position="0 1.6 0">
+        <a-entity geometry="primitive: triangle; height: 0.1; width: 0.1 depth: 10 " position="0 -1.5 -2"
+            material="color: black; opacity: .5"></a-entity>
+      </a-entity>
 
       <!--1pm box !-->
-      <a-box src="#wally1" position="5 2 -8.66" rotation="0 -30 0" scale="2 2 2">
-        <a-entity text="value: 1; color: #000000"
-        accesskey=" "scale="10 10 10" position="4.8 1 0"></a-entity>
+      <a-box src="#wally6" position="5 2 -8.66" rotation="0 -30 0" scale="3 3 1">
+        <a-entity text="value: 1:00; color: #000000"
+        accesskey=" "scale="10 10 10" position="4.5 1 0"></a-entity>
       </a-box>
 
       <!--2pm box !-->
-      <a-box src="#wally1" position="8.66 2 -5" rotation="0 -60 0" scale="2 2 2">
-        <a-entity text="value: 2; color: #000000"
-        accesskey=" "scale="10 10 10" position="4.8 1 0"></a-entity>
+      <a-box src="#wally5" position="8.66 2 -5" rotation="0 -60 0" scale="3 3 1">
+        <a-entity text="value: 2:00; color: #000000"
+        accesskey=" "scale="10 10 10" position="4.5 1 0"></a-entity>
       </a-box>
 
       <!--3pm box !-->
-      <a-box src="#wally1" position="10 2 0" rotation="0 -90 0" scale="2 2 2">
-        <a-entity text="value: 3; color: #000000"
-        accesskey=" "scale="10 10 10" position="4.8 1 0"></a-entity>
+      <a-box src="#wally3" position="10 2 0" rotation="0 -90 0" scale="3 3 1">
+        <a-entity text="value: 3:00; color: #000000"
+        accesskey=" "scale="10 10 10" position="4.5 1 0"></a-entity>
       </a-box>
 
       <!--4pm box !-->
-      <a-box src="#wally1" position="8.66 2 5" rotation="0 -120 0" scale="2 2 2">
-        <a-entity text="value: 4; color: #000000"
-        accesskey=" "scale="10 10 10" position="4.8 1 0"></a-entity>
+      <a-box src="#wally4" position="8.66 2 5" rotation="0 -120 0" scale="3 3 1">
+        <a-entity text="value: 4:00; color: #000000"
+        accesskey=" "scale="10 10 10" position="4.5 1 0"></a-entity>
       </a-box>
 
       <!--5pm box !-->
-      <a-box src="#wally1" position="5 2 8.66" rotation="0 -150 0" scale="2 2 2">
-        <a-entity text="value: 5; color: #000000"
-        accesskey=" "scale="10 10 10" position="4.8 1 0"></a-entity>
+      <a-box src="#wally7" position="5 2 8.66" rotation="0 -150 0" scale="3 3 1">
+        <a-entity text="value: 5:00; color: #000000"
+        accesskey=" "scale="10 10 10" position="4.5 1 0"></a-entity>
       </a-box>
 
       <!--6pm box !-->
-      <a-box src="#wally1" position="0 2 10" rotation="0 180 0" scale="2 2 2"
-        animation="property: object3D.position.y; to: 2.2;
-        dir: alternate; dur: 2000; loop: true">
-        <a-entity text="value: 6; color: #000000" position="4.8 1 0"
+      <a-box src="#wally8" position="0 2 10" rotation="0 180 0" scale="3 3 1">
+        <a-entity text="value: 6:00; color: #000000" position="4.5 1 0"
         accesskey=" "scale="10 10 10"></a-entity>
       </a-box>
 
       <!--7pm box !-->
-      <a-box src="#wally1" position="-5 2 8.66" rotation="0 -210 0" scale="2 2 2">
-        <a-entity text="value: 7; color: #000000"
-        accesskey=" "scale="10 10 10" position="4.8 1 0"></a-entity>
+      <a-box src="#wally14" position="-5 2 8.66" rotation="0 -210 0" scale="3 3 1">
+        <a-entity text="value: 7:00; color: #000000"
+        accesskey=" "scale="10 10 10" position="4.5 1 0"></a-entity>
       </a-box>
 
       <!--8pm box !-->
-      <a-box src="#wally1" position="-8.66 2 5" rotation="0 -240 0" scale="2 2 2">
-        <a-entity text="value: 8; color: #000000"
-        accesskey=" "scale="10 10 10" position="4.8 1 0"></a-entity>
+      <a-box src="#wally9" position="-8.66 2 5" rotation="0 -240 0" scale="3 3 1">
+        <a-entity text="value: 8:00; color: #000000"
+        accesskey=" "scale="10 10 10" position="4.5 1 0"></a-entity>
       </a-box>
 
       <!--9pm box !-->
-      <a-box src="#wally1" position="-10 2 0" rotation="0 -270 0" scale="2 2 2">
-        <a-entity text="value: 9; color: #000000"
-        accesskey=" "scale="10 10 10" position="4.8 1 0"></a-entity>
+      <a-box src="#wally13" position="-10 2 0" rotation="0 -270 0" scale="3 3 1">
+        <a-entity text="value: 9:00; color: #000000"
+        accesskey=" "scale="10 10 10" position="4.5 1 0"></a-entity>
       </a-box>
 
       <!--10pm box !-->
-      <a-box src="#wally1" position="-8.66 2 -5" rotation="0 -300 0" scale="2 2 2">
-        <a-entity text="value: 10; color: #000000"
-        accesskey=" "scale="10 10 10" position="4.8 1 0"></a-entity>
+      <a-box src="#wally2" position="-8.66 2 -5" rotation="0 -300 0" scale="3 3 1">
+        <a-entity text="value: 10:00; color: #000000"
+        accesskey=" "scale="10 10 10" position="4.35 1 0"></a-entity>
       </a-box>
 
       <!--11pm box !-->
-      <a-box src="#wally1" position="-5 2 -8.66" rotation="0 -330 0" scale="2 2 2">
-        <a-entity text="value: 11; color: #000000"
-        accesskey=" "scale="10 10 10" position="4.8 1 0"></a-entity>
+      <a-box src="#wally15" position="-5 2 -8.66" rotation="0 -330 0" scale="3 3 1">
+        <a-entity text="value: 11:00; color: #000000"
+        accesskey=" "scale="10 10 10" position="4.35 1 0"></a-entity>
       </a-box>
 
       <!--12pm box !-->
-      <a-box src="#wally11" position="0 2 -10" rotation="0 0 0" scale="2 2 2"
-        animation="property: object3D.position.y; to: 2.2;
-        dir: alternate; dur: 2000; loop: true">
-        <a-entity text="value: 12; color: #000000" position="4.65 1 0"
+      <a-box src="#wally11" position="0 2 -10" rotation="0 0 0" scale="3 3 1">
+        <a-entity text="value: 12:00; color: #000000" position="4.35 1 0"
         accesskey=" "scale="10 10 10"></a-entity>
       </a-box>
-
-
 
     </a-scene>
 
